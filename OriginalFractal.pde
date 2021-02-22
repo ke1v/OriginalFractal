@@ -2,11 +2,11 @@ void setup(){
   size(1000, 1000);
   background(0);
   noStroke();
-  fractal(500, 600, 575);
+  
 }
 
 void draw(){
-
+  fractal(500, 600, 575);
 }
 
 void fractal(int centerX, int centerY, int radius) {
