@@ -21,10 +21,10 @@ void fractal(int centerX, int centerY, int radius, int points) {
 }
 
 void polygon(float x, float y, float radius, int npoints) {
-  float angle = TWO_PI / npoints;
+  float angle = 6.28 / npoints;
   float startingAngle = (npoints%2==0) ? angle/2 : angle/4;
   beginShape();
-  for (float a = startingAngle; a < TWO_PI; a += angle) {
+  for (float a = startingAngle; a < 6.28; a += angle) {
     float sx = x + cos(a) * radius;
     float sy = y + sin(a) * radius;
     vertex(sx, sy);
