@@ -16,7 +16,7 @@ void fractal(int centerX, int centerY, int radius) {
 }
 
 void fractal(int centerX, int centerY, int radius, int points) {
-  if (points < 100 && points > 2) {
+  if (points < 10 && points > 2) {
     fill((float)(Math.random()*255), (float)(Math.random()*255), (float)(Math.random()*255));
     polygon(centerX, centerY, radius, points);
     fractal(centerX, centerY, radius/2, points+1);
