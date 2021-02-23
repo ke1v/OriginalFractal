@@ -1,6 +1,6 @@
 void setup(){
   size(1000, 1000);
-  fractal(500, 600, 575);
+  triangle(500, 500, 600, 500, 575, 575);
 }
 
 void draw(){
