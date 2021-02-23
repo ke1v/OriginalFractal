@@ -1,12 +1,12 @@
 void setup(){
   size(1000, 1000);
-  triangle(500, 500, 600, 500, 575, 575);
+  fractalInit(500, 600, 575);
 }
 
 void draw(){
 }
 
-void fractal(int centerX, int centerY, int radius) {
+void fractalInit(int centerX, int centerY, int radius) {
   fill((float)(Math.random()*255), (float)(Math.random()*255), (float)(Math.random()*255));
   polygon(centerX, centerY, radius, 3);
   fractal(centerX, centerY, radius/2, 4);
